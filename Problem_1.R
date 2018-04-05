@@ -5,6 +5,10 @@ x <- c(4, 1, 1, 4)
 y <- c(1, 4)
 
 #c
+## Don't overwrite diff. It's an internal function. Run
+?diff
+## to see what it normally does
+
 diff <- c(x - y) # vector y recycles until it reaches the same length as x
 
 #d
