@@ -1,0 +1,139 @@
+
+R version 3.2.3 (2015-12-10) -- "Wooden Christmas-Tree"
+Copyright (C) 2015 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> lintr::lint("Problem_2.R")
+Problem_2.R:9:1: style: Variable and function names should be all lowercase.
+averageMin <- mean(xmin)
+^~~~~~~~~~
+Problem_2.R:10:1: style: Variable and function names should be all lowercase.
+averageMax <- mean(xmax)
+^~~~~~~~~~
+Problem_2.R:13:1: style: Variable and function names should be all lowercase.
+belowAvg <- xmin[xmin < 21.4]
+^~~~~~~~
+Problem_2.R:18:13: style: Variable and function names should be all lowercase.
+xmin[xmin < averageMin]
+            ^~~~~~~~~~
+Problem_2.R:26:1: style: Variable and function names should be all lowercase.
+aboveAvg <- xmin[xmin > 21.4]
+^~~~~~~~
+Problem_2.R:30:1: style: Variable and function names should be all lowercase.
+dayNames <- c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun')
+^~~~~~~~
+Problem_2.R:30:15: style: Only use double-quotes.
+dayNames <- c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun')
+              ^~~~~
+Problem_2.R:30:22: style: Only use double-quotes.
+dayNames <- c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun')
+                     ^~~~~
+Problem_2.R:30:29: style: Only use double-quotes.
+dayNames <- c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun')
+                            ^~~~~
+Problem_2.R:30:36: style: Only use double-quotes.
+dayNames <- c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun')
+                                   ^~~~~
+Problem_2.R:30:43: style: Only use double-quotes.
+dayNames <- c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun')
+                                          ^~~~~
+Problem_2.R:30:50: style: Only use double-quotes.
+dayNames <- c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun')
+                                                 ^~~~~
+Problem_2.R:30:57: style: Only use double-quotes.
+dayNames <- c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun')
+                                                        ^~~~~
+Problem_2.R:31:16: style: Variable and function names should be all lowercase.
+names(xmin) <- dayNames
+               ^~~~~~~~
+Problem_2.R:32:16: style: Variable and function names should be all lowercase.
+names(xmax) <- dayNames
+               ^~~~~~~~
+Problem_2.R:34:2: style: Commented code should be removed.
+#g + h
+ ^~~~~
+Problem_2.R:35:1: style: lines should not be more than 80 characters.
+temperatures <- data.frame(xmin = xmin, xmax = xmax, xminFahrenheit = 9 / 5 * xmin + 32)
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Problem_2.R:38:1: style: lines should not be more than 80 characters.
+temperaturesFahrenheit <- data.frame(xmin = 9 / 5 * xmin + 32, xmax = 9 / 5 * xmax + 32)
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Problem_2.R:38:1: style: Variable and function names should be all lowercase.
+temperaturesFahrenheit <- data.frame(xmin = 9 / 5 * xmin + 32, xmax = 9 / 5 * xmax + 32)
+^~~~~~~~~~~~~~~~~~~~~~
+Problem_2.R:42:1: style: lines should not be more than 80 characters.
+temperaturesFirstFiveDays <- data.frame(xmin = xmin[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri')], xmax = xmax[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri')])
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Problem_2.R:42:1: style: Variable and function names should be all lowercase.
+temperaturesFirstFiveDays <- data.frame(xmin = xmin[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri')], xmax = xmax[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri')])
+^~~~~~~~~~~~~~~~~~~~~~~~~
+Problem_2.R:42:55: style: Only use double-quotes.
+temperaturesFirstFiveDays <- data.frame(xmin = xmin[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri')], xmax = xmax[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri')])
+                                                      ^~~~~
+Problem_2.R:42:62: style: Only use double-quotes.
+temperaturesFirstFiveDays <- data.frame(xmin = xmin[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri')], xmax = xmax[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri')])
+                                                             ^~~~~
+Problem_2.R:42:69: style: Only use double-quotes.
+temperaturesFirstFiveDays <- data.frame(xmin = xmin[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri')], xmax = xmax[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri')])
+                                                                    ^~~~~
+Problem_2.R:42:76: style: Only use double-quotes.
+temperaturesFirstFiveDays <- data.frame(xmin = xmin[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri')], xmax = xmax[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri')])
+                                                                           ^~~~~
+Problem_2.R:42:83: style: Only use double-quotes.
+temperaturesFirstFiveDays <- data.frame(xmin = xmin[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri')], xmax = xmax[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri')])
+                                                                                  ^~~~~
+Problem_2.R:42:106: style: Only use double-quotes.
+temperaturesFirstFiveDays <- data.frame(xmin = xmin[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri')], xmax = xmax[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri')])
+                                                                                                         ^~~~~
+Problem_2.R:42:113: style: Only use double-quotes.
+temperaturesFirstFiveDays <- data.frame(xmin = xmin[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri')], xmax = xmax[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri')])
+                                                                                                                ^~~~~
+Problem_2.R:42:120: style: Only use double-quotes.
+temperaturesFirstFiveDays <- data.frame(xmin = xmin[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri')], xmax = xmax[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri')])
+                                                                                                                       ^~~~~
+Problem_2.R:42:127: style: Only use double-quotes.
+temperaturesFirstFiveDays <- data.frame(xmin = xmin[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri')], xmax = xmax[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri')])
+                                                                                                                              ^~~~~
+Problem_2.R:42:134: style: Only use double-quotes.
+temperaturesFirstFiveDays <- data.frame(xmin = xmin[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri')], xmax = xmax[c('Mon', 'Tue', 'Wed', 'Thu', 'Fri')])
+                                                                                                                                     ^~~~~
+Problem_2.R:47:3: style: Variable and function names should be all lowercase.
+  xminFahrenheit <- xmin * (9/5) + 32
+  ^~~~~~~~~~~~~~
+Problem_2.R:47:30: style: Put spaces around all infix operators.
+  xminFahrenheit <- xmin * (9/5) + 32
+                            ~^~
+Problem_2.R:48:3: style: Variable and function names should be all lowercase.
+  xmaxFahrenheit <- xmax * (9/5) + 32
+  ^~~~~~~~~~~~~~
+Problem_2.R:48:30: style: Put spaces around all infix operators.
+  xmaxFahrenheit <- xmax * (9/5) + 32
+                            ~^~
+Problem_2.R:51:1: style: Variable and function names should be all lowercase.
+temperaturesFahrenheit <- temeratures[, c('xminFahrenheit', 'xmaxFahrenheit)]
+^~~~~~~~~~~~~~~~~~~~~~
+Problem_2.R:51:43: style: Only use double-quotes.
+temperaturesFahrenheit <- temeratures[, c('xminFahrenheit', 'xmaxFahrenheit)]
+                                          ^~~~~~~~~~~~~~~~
+Problem_2.R:51:61: error: unexpected INCOMPLETE_STRING
+temperaturesFahrenheit <- temeratures[, c('xminFahrenheit', 'xmaxFahrenheit)]
+                                                            ^
+Problem_2.R:58:1: style: Trailing blank lines are superfluous.
+
+^
+> 
+> 
